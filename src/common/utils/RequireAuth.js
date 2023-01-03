@@ -8,9 +8,8 @@ const RequireAuth = ({ allowedRole }) => {
 
     console.log("USE AUTH DATA: ", data);
 
-    // State "From" is Used to Bring Back The User From Where it's Begin
+    //  State "from" is Used to Bring Back The User From Where it's Begin
     //  or Simply Just a Browser History
-
     return data?.role === allowedRole ? (
         <MaterialLayout />
     ) : data?.token ? (

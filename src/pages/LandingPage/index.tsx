@@ -1,6 +1,6 @@
 export const LandingPage = () => {
     return (
-        <div>
+        <div className="mb-16 ">
             <p>Landing Page</p>
         </div>
     )

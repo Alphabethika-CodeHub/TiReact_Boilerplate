@@ -10,13 +10,13 @@ export default function CustomFooter() {
     };
 
     return (
-        <footer className="mx-auto max-w-screen shadow-lg px-9 py-4 rounded-lg mt-8 border">
-            <div className="flex justify-between items-center mb-2">
+        <footer className="bg-white mx-auto w-full shadow-lg px-9 py-4 mt-8 border fixed bottom-0 dark:bg-soft-black dark:border-0">
+            <div className="flex justify-between items-center">
                 <section>
                     <Chip color="purple" value="Made With ❤️ From Artisan 🥐" />
                 </section>
                 <section>
-                    <Button className="mr-10" onClick={() => scrollToTop()}>Back to Top</Button>
+                    <Button size="sm" className="mr-10" onClick={() => scrollToTop()}>Back to Top</Button>
                 </section>
             </div>
         </footer>

@@ -5,8 +5,9 @@ import CustomNavbar from '../Components/Layout/CustomNavbar';
 import CustomFooter from './../Components/Layout/CustomFooter';
 
 export const MaterialLayout = observer(() => {
-    function RemoveComponent(): boolean {
 
+    // Remove Function at Login or Register Page
+    function RemoveComponent(): boolean {
         const url_2 = window.location.href;
         const url = window.location.href.split("/");
         const lastSegment = url.pop() || url.pop()
@@ -23,14 +24,15 @@ export const MaterialLayout = observer(() => {
 
     return (
         <>
-            <div className="bg-black text-center py-2">
-                <Typography className="text-white" variant="small">
+            <div className="bg-black dark:bg-elegant-soft-black text-center py-2 ">
+                <Typography className="text-white " variant="small">
                     • Built Different From <mark> Artisan</mark>
                 </Typography>
             </div>
 
             {RemoveComponent() ? "" : <CustomNavbar />}
-            <div id="main_layout" className="p-8">
+
+            <div id="main_layout" className="p-8 dark:bg-soft-black dark:text-white">
                 <Outlet />
             </div>
 

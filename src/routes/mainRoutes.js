@@ -33,7 +33,7 @@ export const MainRoutes = () => {
                     <Route path="/" exact element={<LandingPage />} />
 
                     <Route path="/unauthorized" exact element={<Unauthorized />} />
-                    <Route path="/404" exact element={<NotFound />} />
+                    <Route path="*" exact element={<NotFound />} />
                 </Route>
 
             </Routes>

@@ -14,8 +14,6 @@ export const http = {
     },
     post: (url, opts) => {
         let req = superagent.post(appConfig.apiUrl + url);
-        console.log("PATH HTTP POST URL: ", appConfig.apiUrl + url);
-        console.log("BACKENDURL PROCESS: ", process.env.REACT_APP_BACKEND_URL);
         if (store.accessToken) {
             req = req.set('Authorization', 'Bearer ' + store.accessToken);
         } else {
